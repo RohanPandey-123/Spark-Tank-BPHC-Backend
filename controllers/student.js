@@ -187,7 +187,7 @@ export const paymentVerification = async (req, res) => {
                     razorpay_signature,
                 });
                 console.log("check");
-                res.redirect(`https://spark-tank-iiit-frontend.vercel.app/paymentsuccess?reference=${razorpay_payment_id}`);
+                res.redirect(`https://spark-tank-bphc-frontend.vercel.app/paymentsuccess?reference=${razorpay_payment_id}`);
             } catch (error) {
                 console.error('Error creating payment record:', error);
                 return res.status(500).json({
